@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 import { useTheme } from './hooks/useTheme';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -9,6 +10,10 @@ import TextToSpeechPage from './pages/TextToSpeechPage';
 import FeaturesPage from './pages/FeaturesPage';
 import HowToUsePage from './pages/HowToUsePage';
 import AboutPage from './pages/AboutPage';
+
+<BrowserRouter basename="/Speechify6">
+  <App />
+</BrowserRouter>
 
 function App() {
   const { theme, toggleTheme } = useTheme();
